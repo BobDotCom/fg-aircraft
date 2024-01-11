@@ -2740,6 +2740,7 @@ HSD:   Horisontal Situation Display: Pilot right Front Panel: controls mode and 
                 <max-fire-range-nm source="authentic" type="double">107.25</max-fire-range-nm>
                 <FCS-field-deg type="int">25</FCS-field-deg>
                 <seeker-field-deg type="int">155</seeker-field-deg>
+<!--                <attack-steering-cue-enabled type="bool">true</attack-steering-cue-enabled>-->
                 <max-g type="int">17</max-g><!-- AIM-54A could do 17G -->
                 <thrust-lbf-stage-1 source="authentic" type="double">4000</thrust-lbf-stage-1>
                 <thrust-lbf-stage-2 source="authentic" type="double">0.0</thrust-lbf-stage-2>
@@ -2757,14 +2758,24 @@ HSD:   Horisontal Situation Display: Pilot right Front Panel: controls mode and 
                 <min-fire-range-nm type="double">2.0</min-fire-range-nm><!-- was 0.4 -->
                 <rail type="bool">false</rail>
                 <max-report-distance type="double">100</max-report-distance>
-                <navigation type="string">direct</navigation>
+                <navigation type="string">PN</navigation>
+<!--                <rail-length-m type="double">2.6924</rail-length-m>&lt;!&ndash; LAU 127 Missile Launcher &ndash;&gt;-->
+<!--                <rail-point-forward type="bool">true</rail-point-forward>-->
                 <class type="string">A</class>
                 <fire-msg>FOX3</fire-msg>
+                <telemetry type="bool">true</telemetry>                <!-- enable for aim 54 to see datalink info -->
                 <DLZ type="bool">true</DLZ>
                 <DLZ-optimal-alt-feet type="double">35000</DLZ-optimal-alt-feet>
                 <DLZ-optimal-closing-mach type="double">2.5</DLZ-optimal-closing-mach>
+<!--                <ready-time type="double">1.5</ready-time>-->
+                <reaquire type="bool">true</reaquire>
+<!--                <guide-before-ignition type="bool">true</guide-before-ignition>-->
                 <ejector-speed-fps type="double">20</ejector-speed-fps>
                 <drop-time type="double">0.5</drop-time>
+                <lock-on-after-launch type="bool">true</lock-on-after-launch>
+                <auto-switch-target-allowed type="bool">false</auto-switch-target-allowed>
+                <prowl-flight type="string">gyro-pitch</prowl-flight>
+                <switch-time-sec type="double">5</switch-time-sec>
             </aim-54>
             <mk-83>
                 <type-id type="int">33</type-id>
